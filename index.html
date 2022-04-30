@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+  <form>
+    <h2>Enter your support query</h2>
+    <ul>
+      <li>
+        <label for="uname">User name:</label>
+        <input type="text" name="uname" id="uname" required minlength="5" maxlength="20">
+        <span class="username-error errormessage"></span>
+      </li>
+      <li>
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" required formnovalidate>
+        <span class="email-error errormessage"></span>
+      </li>
+      <li>
+        <label for="phone">Phone number:</label>
+        <input type="text" name="phone" id="phone" required maxlength="15">
+        <span class="phone-error errormessage"></span>
+      </li>
+      <li>
+        <label for="comment">Comment:</label>
+        <textarea name="comment" id="comment" maxlength="200">
+          </textarea>
+      </li>
+      <li>
+        <button>Submit comment</button>
+      </li>
+    </ul>
+  </form>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
